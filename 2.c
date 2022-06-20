@@ -178,3 +178,30 @@ void average(void) {
    }
   printf("3명의 전 과목평균은 %d점입니다\n",sum / 6);
 }
+
+// ex213
+// #include <stdio.h>
+// void search_linear(int s);
+// int nums[14] = {
+//     1,2,3,4,5,6,7,8,9,10,11,12,13,14
+// };
+// int main(void) {
+//     int s;
+//     printf("우리가 찾고싶은 수 -> ");
+//     scanf("%d",&s);
+//     search_linear(s);
+//     return 0;
+// }
+// void search_linear(int s) {
+//     // int s  = s
+//   // s에 9 입력시 0,1,2,3,4,5,6,7,8,9 출력후 멈춤
+  
+//   for(int i = 0; i<nums[s]; i++) {
+//     printf("\n배열의 %d번째 요소 수 => %d",i,nums[i]);
+//     if(nums[i] == s) {
+//       printf("\n%d 발견 종료합니다 : %d 번쨰",s,i);
+//       break;
+//     }
+//   }
+  
+// }
