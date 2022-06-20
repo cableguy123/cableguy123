@@ -91,29 +91,24 @@
 //   return 0;
 // }
 // void kakunou(void) {
-//   // 여기다가 배열,배열의 인덱스값처리
-//   int i;
-//   int N[5];
-//   int score;
-//   float sum = 0;
+//   // 
 //   for(int i = 0; i<5; i++) {
 //   printf("%d번쨰의 정수입력 -> ",i+1);
 
 //     scanf("%d",&score);
-//    N[i] = score;
-//    sum += score;
+//   
 //   }
 //   // 점수들 다 있음 
-//   printf("평균값은 %.f입니다",sum / 5);  
+
 // }
 // void average(void) {
 //    // 배열 요소 평균 구하는 함수
-//  int i;
-//  while(i == 1) {
-//     kakunou(); 
-//    }
- 
-// }
+    int sum = 0;
+   for(int i = 0; i<5; i++) { 
+   sum += score[i];
+}
+printf("5명의 총 평균은 %d입니다", (sum / 5 )) ;
+ //   }
 // ex212
 // #include <stdio.h>
 
