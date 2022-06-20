@@ -142,3 +142,39 @@ printf("5명의 총 평균은 %d입니다", (sum / 5 )) ;
 //     kakunou();
 //   }
 // }
+
+
+#include <stdio.h>
+
+void kakunou(void);
+void average(void);
+int score[3][2];
+int main(void) {
+  kakunou();
+  average();
+  return 0;
+  
+  // 3이 인원 
+  // 2가 과목
+}
+void kakunou(void) {
+
+
+  for(int i = 0; i<3; i++) {
+    for(int j = 0; j<2; j++) {
+      printf("%d명의 %d번째 과목 점수 ->",i+1,j+1);
+      scanf("%d",&score[i][j]);
+      
+    }
+  }
+
+}
+void average(void) {
+   int sum = 0;
+   for(int i = 0; i<3; i++) {
+     for(int j = 0; j<2; j++) {
+       sum += score[i][j];
+     }
+   }
+  printf("3명의 전 과목평균은 %d점입니다\n",sum / 6);
+}
