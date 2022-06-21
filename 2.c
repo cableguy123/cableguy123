@@ -205,3 +205,41 @@ void average(void) {
 //   }
   
 // }
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+void search_binary(int s);
+int nums[14] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+int main(void)
+{
+    int s;
+    printf("우리가 찾고싶은 수 -> ");
+    scanf("%d",&s);
+    
+    search_binary(s);
+    return 0;
+}
+void search_binary(int s) {
+    int low = 0;
+    int high = 13;
+    while(low <= high) {
+        int mid = (low + high) / 2;  // 6 배출
+        printf("배열의 %d번쨰 요소 호출 ->  %d\n",mid,nums[mid]);
+        if(s == nums[mid]) {
+            printf("%d find! : %d번쨰 \n",s,mid);
+            printf("호출 종료 !");
+            break;
+        }
+        else if(s < nums[mid]) {
+            high = mid - 1;
+        } else {
+            low = mid + 1;
+        }
+    }
+}
